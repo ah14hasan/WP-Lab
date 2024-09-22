@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Experiment 2</title>
+    <!-- Paste from "Quick Start" in "Introduction" page of Bootstrap docs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body style="background-color: rgb(218, 186, 250);">
+    <!-- CODE STARTS HERE -->
+
+
+    <!--NAVIGATION BAR-->
+    <!-- Paste from "Navbar" in "Components" of Bootstrap docs  -->
+    <!-- Modify names of elements / color of navbar as per requirements -->
+    <!-- Insert links in the "href" to the corresponding html files you have created -->
+    <!-- In href, # takes you nowhere and / takes you to the home page -->
+    <!--If you want the link (specified in href) to open in a new page, write this -: target = "_blank"-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">CineSphere</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav> <!--End of Navbar-->
+
+
+    <!--ALERT MESSAGE-->
+    <!--Just below the navbar, say you want to display an alert message / notification about a sale happening-->
+    <!--Go to bootstrap and select alerts under components-->
+    <!--In the div class "alert-warning" gives a yellow message, and "alert-success" gives a green message-->
+    <div class="alert alert-primary" role="alert">
+        <strong>Summer Blockbuster Sale!</strong> Buy 5 classic DVDs and get 5 free!
+    </div>
+
+
+    <!-- JUMBOTRON -->
+    <!-- Creating a container (basically like a box) and adding jumbotron from bootstrap -->
+    <!-- You can also make the div class as container-fluid so that the content fits the entire horizontal space -->
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1 class="display-4" style="text-align: center; color: rgb(255, 0, 0);">Welcome to CineSphere!</h1>
+            <img src="https://pimwp.s3-accelerate.amazonaws.com/2022/07/Movie-1200-630.jpg" , alt="movies" ,
+                width="1755" , height="700">
+            <p></p>
+            <p class="lead text-center" style="color: rgb(255, 0, 0);"><b>Preserving and proliferating mankind's
+                    greatest art form, one screening at a time.</b></p>
+            <hr class="my-4">
+            <marquee style="color: rgb(0, 72, 255);"><b>Best films of all time | Oscar nominees and winners | Bollywood
+                    Blockbusters |
+                    Hollywood extravaganza | Film Festivals | Trending movies | Action | Comedy | Romance | Sci-Fi |
+                    Mystery | Thriller | Fantasy
+                    | Superheroes</b></marquee>
+        </div>
+    </div>
+    <p></p>
+
+
+    <!-- COLUMN HEADINGS -->
+    <!-- In the bootstrap website, go to "Examples" and select the "Jumbotron" example -->
+    <!-- Right click on the page and select "inspect" -->
+    <!-- Make sure that no kind of responsive preview is applied -->
+    <!-- Then, under the "Elements", hover your mouse over code and observe what parts of the page are highlighted -->
+    <!-- When you find a part of the page you're interested to copy, right click on that line of code and select "edit as html" -->
+    <!-- Then, select all of that code (cmd+A), copy it, and paste it in your VS Code as i have done below-:  -->
+    <!-- (I have pasted the copied code in div class container) -->
+    <!-- I have selected the "Carousel" example and selected the code for image above heading and pasted it just above the heading in my code -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <!-- Add the "text-center" class to make everything align in the middle -->
+                <img class="rounded-circle"
+                    src="https://s.yimg.com/ny/api/res/1.2/D038nnZ9XgYzZvPVOkvrew--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en-US/homerun/woman_s_day_132/d5de11fc9c6fdb46eb1d18eaac9e7b0a"
+                    alt="holly" width="140" height="140">
+                <h2>Hollywood Classics</h2>
+                <p>At CineSphere, classic Hollywood films await
+                    to captivate your imagination. From the golden age of cinema, our curated collection features iconic
+                    masterpieces that have defined generations, including unforgettable performances by legendary stars
+                    like Audrey Hepburn, Humphrey Bogart, and Marilyn Monroe. Whether you're a seasoned cinephile or a
+                    newcomer to classic films, our selection promises to transport you to an era of glamour, romance,
+                    and adventure. Visit us today and rediscover the magic of Hollywood's golden years!
+                </p>
+                <p><a class="btn btn-secondary" href="https://www.imdb.com/list/ls000070952/" target="_blank"
+                        role="button">Learn More »</a></p>
+            </div>
+            <div class="col-md-4 text-center">
+                <!-- Add the "text-center" class to make everything align in the middle -->
+                <img class="rounded-circle"
+                    src="https://m.media-amazon.com/images/M/MV5BOTQ5Nzc3NzAtMzZlMS00ZWJjLWIxMGMtNDU4ZTQ1NmNjMjc5XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg"
+                    alt="bolly" width="140" height="140">
+                <h2>Bollywood</h2>
+                <p>Immerse yourself in the vibrant world of classic Bollywood at our movie rental store, where a
+                    treasure trove of cinematic gems awaits. Our collection showcases the golden era of Indian cinema,
+                    featuring legendary actors like Raj Kapoor, Nargis, and Amitabh Bachchan in films that have left an
+                    indelible mark on the hearts of millions. From timeless romances to epic dramas, these films are a
+                    celebration of music, dance, and storytelling that transcends generations. Whether you're a lifelong
+                    fan or new to Bollywood, our selection promises to enchant and entertain. Visit us today and
+                    experience the magic of classic Bollywood!
+                </p>
+                <p><a class="btn btn-secondary" href="https://www.imdb.com/india/top-rated-indian-movies/"
+                        target="_blank" role="button">Learn More »</a></p>
+            </div>
+            <div class="col-md-4 text-center">
+                <!-- Add the "text-center" class to make everything align in the middle -->
+                <img class="rounded-circle"
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Baahubali_The_Beginning_poster.jpg/220px-Baahubali_The_Beginning_poster.jpg"
+                    alt="south" width="140" height="140">
+                <h2>South Cinema</h2>
+                <p>Discover the rich tapestry of classic South Indian cinema at our movie rental store, where a curated
+                    collection of timeless films awaits your exploration. Our selection features iconic movies from the
+                    golden era of Tamil, Telugu, Malayalam, and Kannada cinema, showcasing legendary actors like M.G.
+                    Ramachandran, N.T. Rama Rao, and Rajkumar. These films, renowned for their compelling narratives,
+                    melodious music, and cultural depth, offer a captivating glimpse into the diverse storytelling
+                    traditions of South India. Whether you're a devoted fan or a curious newcomer, our collection
+                    promises to transport you to a world of cinematic brilliance. Visit us today and celebrate the
+                    legacy of classic South Indian films!
+                </p>
+                <p><a class="btn btn-secondary" href="https://www.imdb.com/list/ls025330027/" target="_blank"
+                        role="button">Learn More »</a></p>
+            </div>
+        </div>
+        <p class="lead text-center">
+            <a class="btn btn-primary btn-lg"
+                href="https://www.google.com/maps/place/AMB+Cinemas/@17.4782588,78.339787,14z/data=!3m1!5s0x3bcb93c8595a7705:0x39e105c49bd5b4b7!4m10!1m2!2m1!1smovie+theater!3m6!1s0x3bcb938d99f563cd:0x1d711d3f9ea94260!8m2!3d17.4577538!4d78.3632536!15sCg1tb3ZpZSB0aGVhdGVyWg8iDW1vdmllIHRoZWF0ZXKSAQ1tb3ZpZV90aGVhdGVy4AEA!16s%2Fg%2F11fcsqd3ky?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank" role="button">View on Google Maps</a>
+            <!--Copy some sample address from google maps and paste it in the href-->
+        </p>
+    </div>
+
+
+    <!-- Paste from "Quick Start" in "Introduction" page of Bootstrap docs -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
