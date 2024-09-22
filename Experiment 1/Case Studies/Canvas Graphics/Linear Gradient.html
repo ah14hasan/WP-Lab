@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+</head>
+
+<body>
+    
+    <!-- Defining our canvas -->
+    <canvas id="Ali's Canvas", width="1420", height="700", style="border: 1px solid #ff0000;"> </canvas>
+
+    <!--Linear Gradient-->
+    <script>
+
+    var c = document.getElementById("Ali's Canvas")
+    var ctx = c.getContext("2d")
+
+    // Create linear gradient
+    const grad=ctx.createLinearGradient(0,0, 1420,700); // parameters: (x1,y1,x2,y2)
+    grad.addColorStop(0, "red");
+    grad.addColorStop(0.5, "yellow");
+    grad.addColorStop(1, "green");
+
+    // Fill rectangle with gradient
+    ctx.fillStyle = grad;
+    ctx.fillRect(0,0, 1420,700);
+
+    </script>
+
+</body>
+</html>
