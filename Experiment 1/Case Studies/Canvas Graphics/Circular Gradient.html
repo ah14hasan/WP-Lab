@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Gradient</title>
+</head>
+
+<body>
+    
+    <!-- Defining our canvas -->
+    <canvas id="Ali's Canvas", width="1420", height="700", style="border: 1px solid #ff0000;"> </canvas>
+
+    <!--Circular Gradient-->
+    <script>
+
+    var c = document.getElementById("Ali's Canvas")
+    var ctx = c.getContext("2d")
+
+    // Create gradient
+    // parameters: (x0,y0,r0,x1,y1,r1)
+    // Here, x0,y0 = center of small circle
+    // x1, y1 = center of big circle
+    // r0 = radius of small circle
+    // r1 = radius of big circle
+    const grad=ctx.createRadialGradient(710,350,200,710,350,600); 
+    grad.addColorStop(0,"orange");
+    grad.addColorStop(0.5,"blue")
+    grad.addColorStop(1,"green");
+
+    // Fill rectangle with gradient
+    ctx.fillStyle = grad;
+    ctx.fillRect(0,0, 1420,700);
+
+    </script>
+
+</body>
+</html>
