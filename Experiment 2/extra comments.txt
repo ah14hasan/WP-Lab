@@ -1,0 +1,5 @@
+After inserting links in href (before adding anything else apart from Navbar), copy and paste the code of index.html in all other html files.
+In all other html files, change the title according to what that file represents.
+Observe that when we click on elements apart from "Home" in the navbar on the website, the names don't get highlighted. Only "Home" is getting highlighted.
+This is because, notice that in index.html, the class for "home" contains "active" class.
+So, in all other html files, remove the "active" class from home and paste that in the corresponding class which that html file is representing.
