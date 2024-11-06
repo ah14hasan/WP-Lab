@@ -1,0 +1,16 @@
+.submitted-data {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+}
